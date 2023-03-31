@@ -1,4 +1,4 @@
-package c04;
+package c04.e01;
 
 interface Func {
     double apply(double x);

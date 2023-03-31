@@ -1,4 +1,4 @@
-package c03;
+package c03.e01;
 
 public class Electronics extends Product {
 

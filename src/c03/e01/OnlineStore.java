@@ -1,4 +1,4 @@
-package c03;
+package c03.e01;
 
 public class OnlineStore extends ShoppingCart {
     public static void main(String[] args) {
