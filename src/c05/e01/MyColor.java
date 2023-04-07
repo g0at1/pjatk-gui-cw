@@ -19,11 +19,11 @@ public
 
     @Override
     public String toString() {
-        return "(" + getRed() + ", " + getGreen() + ", " + getBlue() + ")";
+        return "(" + getRed() + "," + getGreen() + "," + getBlue() + ")";
     }
 
     @Override
     public int compareTo(MyColor o) {
-        return Integer.compare(this.getSum(), o.getSum());
+        return this.getSum() - o.getSum();
     }
 }

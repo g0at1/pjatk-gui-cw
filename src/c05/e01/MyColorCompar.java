@@ -18,7 +18,7 @@ public
             case RED -> c1.getRed() - c2.getRed();
             case GREEN -> c1.getGreen() - c2.getGreen();
             case BLUE -> c1.getBlue() - c2.getBlue();
-            case NONE -> c1.getSum() - c2.getSum();
+            case NONE -> c1.compareTo(c2);
         };
     }
 }
