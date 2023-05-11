@@ -22,27 +22,24 @@ public
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (!(o instanceof Person person))
-            return false;
-
-        return birthYear == person.birthYear &&
-                Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, birthYear);
-    }
-
-    @Override
     public int compareTo(Person o) {
         int result = this.name.compareTo(o.name);
         if (result == 0) {
             result = Integer.compare(this.birthYear, o.birthYear);
         }
         return result;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return birthYear == person.birthYear && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, birthYear);
     }
 }
