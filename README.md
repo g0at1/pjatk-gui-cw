@@ -1,1 +1,3 @@
-# pjatk-gui-cw
+# GUI
+
+### All exercises from GUI class
